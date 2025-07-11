@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vintage JS Projects</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Projects</h1>
+  </header>
+  <main class="projects-grid">
+
+    <!-- 1. To-Do List -->
+    <section class="project-card">
+      <h2>📝 To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter task" />
+      <button onclick="addTodo()">Add</button>
+      <ul id="todoList"></ul>
+      <button class="explain-btn" onclick="showExplanation('todo')">How it Works</button>
+    </section>
+
+    <!-- 2. Stopwatch -->
+    <section class="project-card">
+      <h2>⏱️ Stopwatch</h2>
+      <div id="stopwatch">00:00:00</div>
+      <button onclick="startWatch()">Start</button>
+      <button onclick="stopWatch()">Stop</button>
+      <button onclick="resetWatch()">Reset</button>
+      <button class="explain-btn" onclick="showExplanation('stopwatch')">How it Works</button>
+    </section>
+
+    <!-- 3. Background Color Changer -->
+    <section class="project-card">
+      <h2>🎨 Background Color Changer</h2>
+      <button onclick="changeColor()">Change Color</button>
+      <div id="colorCode"></div>
+      <button class="explain-btn" onclick="showExplanation('color')">How it Works</button>
+    </section>
+
+    <!-- 4. Password Generator -->
+    <section class="project-card">
+      <h2>🔐 Password Generator</h2>
+      <input type="text" id="passwordDisplay" readonly>
+      <button onclick="generatePassword()">Generate Password</button>
+      <button class="explain-btn" onclick="showExplanation('password')">How it Works</button>
+    </section>
+
+    <!-- 5. Calculator -->
+    <section class="project-card">
+      <h2>🧮 Calculator</h2>
+      <input type="text" id="calcDisplay" readonly>
+      <div class="calc-buttons">
+        <button onclick="calcPress('7')">7</button><button onclick="calcPress('8')">8</button><button onclick="calcPress('9')">9</button><button onclick="calcPress('/')">÷</button>
+        <button onclick="calcPress('4')">4</button><button onclick="calcPress('5')">5</button><button onclick="calcPress('6')">6</button><button onclick="calcPress('*')">×</button>
+        <button onclick="calcPress('1')">1</button><button onclick="calcPress('2')">2</button><button onclick="calcPress('3')">3</button><button onclick="calcPress('-')">−</button>
+        <button onclick="calcPress('0')">0</button><button onclick="calcPress('.')">.</button><button onclick="calculate()">=</button><button onclick="calcPress('+')">+</button>
+        <button onclick="clearCalc()">C</button>
+      </div>
+      <button class="explain-btn" onclick="showExplanation('calculator')">How it Works</button>
+    </section>
+
+    <!-- 6. Quiz App -->
+    <section class="project-card">
+      <h2>🧠 Quiz App</h2>
+      <div id="quiz"></div>
+      <button id="nextBtn" onclick="nextQuestion()">Next</button>
+      <button class="explain-btn" onclick="showExplanation('quiz')">How it Works</button>
+    </section>
+
+    <!-- 7. Typing Speed Test -->
+    <section class="project-card">
+      <h2>⌨️ Typing Speed Test</h2>
+      <p id="textDisplay">The quick brown fox jumps over the lazy dog</p>
+      <textarea id="typingArea" oninput="checkTyping()"></textarea>
+      <p id="speedResult"></p>
+      <button class="explain-btn" onclick="showExplanation('typing')">How it Works</button>
+    </section>
+
+    <!-- 8. Clock -->
+    <section class="project-card">
+      <h2>🕒 Clock</h2>
+      <div id="clock"></div>
+      <button class="explain-btn" onclick="showExplanation('clock')">How it Works</button>
+    </section>
+
+    <!-- 9. Weather App -->
+    <section class="project-card">
+      <h2>☁️ Weather App</h2>
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Weather</button>
+      <div id="weatherResult"></div>
+      <button class="explain-btn" onclick="showExplanation('weather')">How it Works</button>
+    </section>
+
+    <!-- 10. Note App -->
+    <section class="project-card">
+      <h2>📝 Note App</h2>
+      <textarea id="noteInput" placeholder="Write a note..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+      <ul id="noteList"></ul>
+      <button class="explain-btn" onclick="showExplanation('note')">How it Works</button>
+    </section>
+
+  </main>
+  <footer>
+    <p>© 2025 Created by Tahfim Evan&Antor Remini</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

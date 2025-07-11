@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #3d3a34;
+  color: #1c1b1a;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #e6dcc1;
+  border-bottom: 3px solid #cbbf9d;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2e2b28;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #e6dcc1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #3d3a34;
+}
+
+.project-card input,
+.project-card textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #b9ac94;
+  background: #f5f3ec;
+}
+
+.project-card button {
+  background-color: #f5c518;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.project-card button:hover {
+  background-color: #e1b614;
+}
+
+.calc-buttons button {
+  margin: 2px;
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  background-color: #e6dcc1;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #3d3a34;
+  border-top: 3px solid #cbbf9d;
+}
+
+#stopwatch {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#quiz p {
+  font-weight: bold;
+}
+
+#quiz button {
+  margin: 4px;
+  display: inline-block;
+}
+
+.explain-btn {
+  margin-top: 1rem;
+  background-color: #b18b00;
+  color: #fff;
+}
+
+#colorCode {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #6b4f00;
+}
+
+#clock {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#weatherResult {
+  margin-top: 1rem;
+  color: #2e2b28;
+}
+
+#speedResult {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
