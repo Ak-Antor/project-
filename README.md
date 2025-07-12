@@ -46,4 +46,4 @@ If you'd like to connect or collaborate:
 
 ## 📄 License
 © 2025 Created by Tahfim Evan&Antor Remini
-This project is open source and free to use under the [MIT License](LICENSE).
+
